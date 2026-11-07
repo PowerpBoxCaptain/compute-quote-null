@@ -37,7 +37,7 @@ UNMARKED: 1 line(s) state numbers outside any marker (leads: mark them or say wh
 As a Claude Code skill:
 
 ```sh
-git clone https://github.com/<org>/compute-quote-null ~/.claude/skills/compute-quote-null
+git clone https://github.com/PowerpBoxCaptain/compute-quote-null ~/.claude/skills/compute-quote-null
 ```
 
 Or run the checker on any answer (Node 18+):
