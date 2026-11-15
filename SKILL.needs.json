@@ -9,7 +9,8 @@
     "Grep",
     "Glob",
     "Write",
-    "WebFetch"
+    "WebFetch",
+    "ToolSearch"
   ],
   "read_paths": [
     "{home}/**",
@@ -45,5 +46,5 @@
     ],
     "commit_paths_in_write_scope": false
   },
-  "note": "Paths: {project} is the folder the session works in, {skill} this skill's folder, {home} the home folder, {tmp} the temp folder. Writes only the saved answer for the checker; opens URLs to quote them (check.mjs --fetch reads, never posts)."
+  "note": "Paths: {project} is the folder the session works in, {skill} this skill's folder, {home} the home folder, {tmp} the temp folder. Writes only the saved answer for the checker; opens URLs to quote them (check.mjs --fetch reads, never posts). ToolSearch only loads the WebFetch tool where the client defers it."
 }
