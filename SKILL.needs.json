@@ -1,0 +1,49 @@
+{
+  "schema": "skill-needs-v1",
+  "skill": "compute-quote-null",
+  "written": "2026-11-15, by hand, from this SKILL.md",
+  "act": "local-write",
+  "tools": [
+    "Bash",
+    "Read",
+    "Grep",
+    "Glob",
+    "Write",
+    "WebFetch"
+  ],
+  "read_paths": [
+    "{home}/**",
+    "{project}/**",
+    "{skill}/**",
+    "{tmp}/**"
+  ],
+  "write_paths": [
+    "{project}/**",
+    "{tmp}/**"
+  ],
+  "forbid_paths": [],
+  "network": "fetch-only",
+  "outward_acts": [],
+  "bash": {
+    "forbid": [
+      {
+        "re": "^\\s*git\\s+(-C\\s+\\S+\\s+)?(push|reset|rebase|stash|clean|restore|checkout\\s+--)\\b",
+        "why": "destructive or outward git"
+      },
+      {
+        "re": "^\\s*rm\\s+-[a-zA-Z]*r",
+        "why": "recursive delete"
+      },
+      {
+        "re": "^\\s*(sendmail|mailx?|mutt|msmtp|swaks)\\s|^\\s*curl\\b.*\\bsmtps?://",
+        "why": "outward mail"
+      },
+      {
+        "re": "^\\s*curl\\b.*(\\s-X\\s*(POST|PUT|PATCH|DELETE)|\\s--data|\\s-d\\s|\\s-F\\s|--upload-file)|^\\s*wget\\b.*--post",
+        "why": "network write (fetch-only)"
+      }
+    ],
+    "commit_paths_in_write_scope": false
+  },
+  "note": "Paths: {project} is the folder the session works in, {skill} this skill's folder, {home} the home folder, {tmp} the temp folder. Writes only the saved answer for the checker; opens URLs to quote them (check.mjs --fetch reads, never posts)."
+}
