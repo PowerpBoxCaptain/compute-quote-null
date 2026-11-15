@@ -1,0 +1,14 @@
+{
+  "name": "compute-quote-null",
+  "owner": {
+    "name": "Capt. Anil Sharma"
+  },
+  "description": "Answer with no made-up facts. Every factual claim is a calculation the reader can redo, an exact quote from a source they can open, or an honest \"not found\" that says where you looked. Use when the user asks for a grounded or cited answer (\"cite your sources\", \"don't make anything up\", \"only from the documents\"), when the answer rests on figures, contracts, policies, regulations, specs or reports, or when a wrong confident answer would cost someone money, safety or trust.",
+  "plugins": [
+    {
+      "name": "compute-quote-null",
+      "source": "./",
+      "description": "Answer with no made-up facts. Every factual claim is a calculation the reader can redo, an exact quote from a source they can open, or an honest \"not found\" that says where you looked. Use when the user asks for a grounded or cited answer (\"cite your sources\", \"don't make anything up\", \"only from the documents\"), when the answer rests on figures, contracts, policies, regulations, specs or reports, or when a wrong confident answer would cost someone money, safety or trust."
+    }
+  ]
+}
