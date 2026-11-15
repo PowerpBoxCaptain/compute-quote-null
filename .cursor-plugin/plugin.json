@@ -1,0 +1,10 @@
+{
+  "name": "compute-quote-null",
+  "description": "Answer with no made-up facts. Every factual claim is a calculation the reader can redo, an exact quote from a source they can open, or an honest \"not found\" that says where you looked. Use when the user asks for a grounded or cited answer (\"cite your sources\", \"don't make anything up\", \"only from the documents\"), when the answer rests on figures, contracts, policies, regulations, specs or reports, or when a wrong confident answer would cost someone money, safety or trust.",
+  "author": {
+    "name": "Capt. Anil Sharma"
+  },
+  "homepage": "https://github.com/PowerpBoxCaptain/compute-quote-null",
+  "repository": "https://github.com/PowerpBoxCaptain/compute-quote-null",
+  "license": "AGPL-3.0-only"
+}
